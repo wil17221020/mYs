@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos | Manzano Rodríguez & Asociados</title>
+    <link class="js-favicon" rel="icon" type="image/png" href="favicon3.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans">
+
+    <!-- HEADER: Mantenemos la estructura consistente -->
+    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+            <a href="index.html" class="flex items-center group py-1">
+                <img src="favicon3.png" alt="Manzano Rodríguez & Asociados" class="h-14 w-auto">
+                <div class="ml-3.5 border-l-2 border-slate-200 pl-3.5">
+                    <span class="text-md font-serif font-bold text-[#0f172a]">MANZANO RODRÍGUEZ</span>
+                    <span class="text-[10px] tracking-[0.22em] text-[#6b0505] uppercase block">& Asociados</span>
+                </div>
+            </a>
+            <nav class="hidden lg:flex space-x-8 text-xs font-bold uppercase tracking-wider text-[#0f172a]/80">
+                <a href="nosotros.html" class="hover:text-[#6b0505]">Sobre Nosotros</a>
+                <a href="fundador.html" class="hover:text-[#6b0505]">Nuestro Fundador</a>
+                <a href="areas.html" class="hover:text-[#6b0505]">Áreas de Práctica</a>
+                <a href="valores.html" class="hover:text-[#6b0505]">Nuestros Valores</a>
+            </nav>
+            <a href="contactos.html" class="bg-[#6b0505] text-white px-5 py-2.5 rounded-sm text-xs font-bold uppercase hover:bg-[#0f172a] transition-colors">Contactos</a>
+        </div>
+    </header>
+
+    <main class="py-16 px-6 max-w-7xl mx-auto">
+        <h1 class="text-4xl font-serif font-bold text-[#0f172a] mb-12 text-center">Contacto</h1>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+            
+            <!-- Columna Izquierda: Información y Formulario -->
+            <div class="space-y-12">
+                <div>
+                    <h3 class="text-lg font-bold text-[#6b0505] mb-4 uppercase tracking-widest text-xs">Información de contacto</h3>
+                    <p class="text-2xl font-serif text-[#0f172a] mb-6">Manzano Rodríguez & Asociados Consultores Legales</p>
+                    <div class="space-y-4 text-slate-600">
+                        <p><i class="fa-solid fa-phone text-[#6b0505] mr-3"></i> 809-363-0015</p>
+                        <p><i class="fa-solid fa-envelope text-[#6b0505] mr-3"></i> abogados@mrabogados.com.do</p>
+                    </div>
+                </div>
+
+                <form class="bg-white p-8 border border-slate-100 shadow-sm rounded-sm space-y-4">
+                    <h3 class="text-xl font-bold text-[#0f172a] mb-4">Envíanos un Mensaje</h3>
+                    <input type="text" placeholder="Nombre Completo" class="w-full p-3 border border-slate-200 rounded-sm focus:ring-1 focus:ring-[#6b0505] outline-none text-sm">
+                    <div class="grid grid-cols-2 gap-4">
+                        <input type="email" placeholder="Correo Electrónico" class="w-full p-3 border border-slate-200 rounded-sm text-sm">
+                        <input type="tel" placeholder="Teléfono" class="w-full p-3 border border-slate-200 rounded-sm text-sm">
+                    </div>
+                    <input type="text" placeholder="Asunto" class="w-full p-3 border border-slate-200 rounded-sm text-sm">
+                    <textarea placeholder="Mensaje" rows="4" class="w-full p-3 border border-slate-200 rounded-sm text-sm"></textarea>
+                    <button class="w-full bg-[#0f172a] text-white py-3 rounded-sm font-bold uppercase text-xs hover:bg-[#6b0505] transition-colors">Enviar Mensaje</button>
+                </form>
+            </div>
+
+            <!-- Columna Derecha: Mapa y Edificio -->
+            <div class="space-y-8">
+                <div>
+                    <h3 class="text-lg font-bold text-[#0f172a] mb-4">Ubicación</h3>
+                    <p class="text-slate-600 mb-4 text-sm italic">Edificio Villa Palmera Business Center</p>
+                    <!-- Mapa Funcional -->
+                    <div class="w-full h-80 bg-slate-200 rounded-sm overflow-hidden shadow-inner">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.56561143167!2d-69.93041922571477!3d18.47355157124115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89a69634e569%3A0x1d439922e92c55e9!2sVilla%20Palmera%20Business%20Center!5e0!3m2!1ses-419!2sdo!4v1689255000000!5m2!1ses-419!2sdo" 
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-lg font-bold text-[#0f172a] mb-4">Nuestras Oficinas</h3>
+                    <!-- Imagen del Edificio -->
+                    <img src="edificio.jpeg" alt="Villa Palmera Business Center" class="w-full h-64 object-cover rounded-sm shadow-md">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <!-- FOOTER: Estilo Rojo Corporativo -->
+    <footer class="bg-[#6b0505] text-white font-sans mt-auto py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+            
+            <!-- Columna 1: Sobre Nosotros -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-serif font-bold tracking-wide text-white">Sobre Nosotros</h3>
+                <p class="text-white/80 text-sm font-light leading-relaxed max-w-sm">
+                    Manzano Rodríguez & Asociados es una firma legal dominicana dedicada a ofrecer servicios jurídicos especializados.
+                </p>
+                <div class="pt-2">
+                    <a href="nosotros.html" class="inline-flex items-center px-5 py-2 border border-white text-white hover:bg-white hover:text-[#6b0505] rounded-full text-xs font-semibold tracking-wide transition-colors">
+                        Ver más &rarr;
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Columna 2: Contacto -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-serif font-bold tracking-wide text-white">Contacto</h3>
+                <p class="text-white/80 text-sm font-light leading-relaxed max-w-sm">
+                    Nos encantaría saber de usted. Contáctenos hoy mismo para agendar su consulta legal estratégica.
+                </p>
+                <div class="pt-2">
+                    <a href="contactos.html" class="inline-flex items-center px-6 py-2 border border-white text-white hover:bg-white hover:text-[#6b0505] rounded-full text-xs font-semibold tracking-wide transition-colors">
+                        Ponte en contacto con nosotros &rarr;
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Columna 3: Redes Sociales -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-serif font-bold tracking-wide text-white">Seguir</h3>
+                <p class="text-white/80 text-sm font-light leading-relaxed max-w-sm">
+                    Manténgase al tanto de las novedades legales en nuestras plataformas.
+                </p>
+                <div class="flex items-center space-x-3 pt-2">
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-white/10 text-white border border-white/20 rounded-full flex items-center justify-center text-sm hover:bg-white hover:text-[#6b0505] transition-all">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-white/10 text-white border border-white/20 rounded-full flex items-center justify-center text-sm hover:bg-white hover:text-[#6b0505] transition-all">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="w-8 h-8 bg-white/10 text-white border border-white/20 rounded-full flex items-center justify-center text-sm hover:bg-white hover:text-[#6b0505] transition-all">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        
+        <!-- Derechos de Autor -->
+        <div class="max-w-7xl mx-auto border-t border-white/10 mt-12 pt-6 text-center text-[11px] text-white/60">
+            <p>Todo el contenido &copy; 2026 Manzano Rodríguez & Asociados. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* ==========================================================================
+   css/estilos.css - Corrección Definitiva de Hover Corporativo
+   ========================================================================== */
+
+/* 1. Importación de Fuentes Premium desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap');
+
+/* 2. Inyección Base de Tailwind CSS con Variables de la Firma */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --primary-firm: #0f172a;  /* Slate oscuro */
+        --accent-firm: #6b0505;   /* Rojo corporativo */
+        --slate-muted: #64748b;   
+        --brand-red: #6b0505;     
+    }
+
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #f8f9fa;
+        color: var(--primary-firm);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6, .font-serif {
+        font-family: 'Playfair Display', Georgia, Cambria, serif;
+    }
+}
+
+/* 3. Intercepción Agresiva de Clases Tailwind Fijas (Estáticos y Hovers) */
+
+/* Elementos estáticos que eran dorados */
+.text-\[\#c5a880\] {
+    color: var(--accent-firm) !important;
+}
+
+.bg-\[\#c5a880\] {
+    background-color: var(--accent-firm) !important;
+}
+
+.border-\[\#c5a880\] {
+    border-color: var(--accent-firm) !important;
+}
+
+/* CORRECCIÓN DE HOVERS: Forzar que el cursor cambie a rojo */
+.hover\:text-\[\#c5a880\]:hover {
+    color: var(--accent-firm) !important;
+}
+
+.hover\:bg-\[\#c5a880\]:hover {
+    background-color: var(--accent-firm) !important;
+}
+
+/* Corregir texto blanco que debe aparecer cuando pasas el cursor sobre el botón de inicio */
+.hover\:text-\[\#0f172a\]:hover {
+    color: #ffffff !important; /* Mantiene el texto blanco sobre el nuevo fondo rojo */
+}
+
+/* Bordes decorativos al pasar el cursor */
+.hover\:border-\[\#c5a880\]\/40:hover {
+    border-color: rgba(107, 5, 5, 0.4) !important;
+}
+
+/* 4. Componentes Visuales Personalizados */
+.circular-hero-frame {
+    position: relative;
+    border-radius: 9999px;
+    overflow: hidden;
+    border: 6px solid #ffffff;
+    box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.15);
+}
+
+.circular-hero-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Transición suave global */
+a, button, input, textarea {
+    transition: all 0.3s ease-in-out !important;
+}
