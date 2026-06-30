@@ -56,17 +56,32 @@
                     </div>
                 </div>
 
-                <form class="bg-white p-8 border border-slate-100 shadow-sm rounded-sm space-y-4">
-                    <h3 class="text-xl font-bold text-[#0f172a] mb-4">Envíanos un Mensaje</h3>
-                    <input type="text" placeholder="Nombre Completo" class="w-full p-3 border border-slate-200 rounded-sm focus:ring-1 focus:ring-[#6b0505] outline-none text-sm">
-                    <div class="grid grid-cols-2 gap-4">
-                        <input type="email" placeholder="Correo Electrónico" class="w-full p-3 border border-slate-200 rounded-sm text-sm">
-                        <input type="tel" placeholder="Teléfono" class="w-full p-3 border border-slate-200 rounded-sm text-sm">
-                    </div>
-                    <input type="text" placeholder="Asunto" class="w-full p-3 border border-slate-200 rounded-sm text-sm">
-                    <textarea placeholder="Mensaje" rows="4" class="w-full p-3 border border-slate-200 rounded-sm text-sm"></textarea>
-                    <button class="w-full bg-[#0f172a] text-white py-3 rounded-sm font-bold uppercase text-xs hover:bg-[#6b0505] transition-colors">Enviar Mensaje</button>
-                </form>
+               <!-- La URL de acción la obtendrás al registrarte en Formspree -->
+<form action="https://formspree.io/f/TU_CODIGO_DE_FORMULARIO" method="POST" class="space-y-6">
+    
+    <!-- Nombre -->
+    <div>
+        <label class="block text-xs font-bold uppercase tracking-widest text-[#0f172a] mb-2">Nombre Completo</label>
+        <input type="text" name="nombre" required class="w-full p-3 bg-slate-50 border border-slate-200 focus:border-[#6b0505] outline-none transition-colors">
+    </div>
+
+    <!-- Email -->
+    <div>
+        <label class="block text-xs font-bold uppercase tracking-widest text-[#0f172a] mb-2">Correo Electrónico</label>
+        <input type="email" name="email" required class="w-full p-3 bg-slate-50 border border-slate-200 focus:border-[#6b0505] outline-none transition-colors">
+    </div>
+
+    <!-- Mensaje -->
+    <div>
+        <label class="block text-xs font-bold uppercase tracking-widest text-[#0f172a] mb-2">Su Consulta</label>
+        <textarea name="mensaje" rows="5" required class="w-full p-3 bg-slate-50 border border-slate-200 focus:border-[#6b0505] outline-none transition-colors"></textarea>
+    </div>
+
+    <!-- Botón -->
+    <button type="submit" class="w-full bg-[#0f172a] text-white font-bold uppercase tracking-widest text-xs py-4 hover:bg-[#6b0505] transition-all">
+        Enviar Mensaje
+    </button>
+</form>
             </div>
 
             <!-- Columna Derecha: Mapa y Edificio -->
