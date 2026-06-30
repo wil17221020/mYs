@@ -11,24 +11,29 @@
 <body class="bg-slate-50 text-slate-800 font-sans">
 
     <!-- HEADER: Mantenemos la estructura consistente -->
-    <header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
-            <a href="index.html" class="flex items-center group py-1">
-                <img src="favicon3.png" alt="Manzano Rodríguez & Asociados" class="h-14 w-auto">
-                <div class="ml-3.5 border-l-2 border-slate-200 pl-3.5">
-                    <span class="text-md font-serif font-bold text-[#0f172a]">MANZANO RODRÍGUEZ</span>
-                    <span class="text-[10px] tracking-[0.22em] text-[#6b0505] uppercase block">& Asociados</span>
-                </div>
-            </a>
-            <nav class="hidden lg:flex space-x-8 text-xs font-bold uppercase tracking-wider text-[#0f172a]/80">
-                <a href="nosotros.html" class="hover:text-[#6b0505]">Sobre Nosotros</a>
-                <a href="fundador.html" class="hover:text-[#6b0505]">Nuestro Fundador</a>
-                <a href="areas.html" class="hover:text-[#6b0505]">Áreas de Práctica</a>
-                <a href="valores.html" class="hover:text-[#6b0505]">Nuestros Valores</a>
-            </nav>
-            <a href="contactos.html" class="bg-[#6b0505] text-white px-5 py-2.5 rounded-sm text-xs font-bold uppercase hover:bg-[#0f172a] transition-colors">Contactos</a>
-        </div>
-    </header>
+    <!-- HEADER MODIFICADO -->
+<header class="bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100 shadow-sm">
+    <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+        <!-- Logo -->
+        <a href="index.html" class="flex items-center">
+            <img src="favicon3.png" alt="Logo" class="h-10 w-auto">
+        </a>
+
+        <!-- Botón Hamburguesa (Visible solo en móvil) -->
+        <button id="menu-btn" class="lg:hidden text-[#0f172a] text-xl">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <!-- Navegación -->
+        <nav id="mobile-menu" class="hidden lg:flex items-center space-x-8 text-xs font-semibold uppercase tracking-wider text-[#0f172a]/80">
+            <a href="nosotros.html" class="hover:text-[#6b0505]">Sobre Nosotros</a>
+            <a href="fundador.html" class="hover:text-[#6b0505]">Nuestro Fundador</a>
+            <a href="areas.html" class="hover:text-[#6b0505]">Áreas de Práctica</a>
+            <a href="valores.html" class="hover:text-[#6b0505]">Nuestros Valores</a>
+            <a href="contactos.html" class="bg-[#0f172a] text-white px-5 py-2.5 rounded-sm">Contactos</a>
+        </nav>
+    </div>
+</header>
 
     <main class="py-16 px-6 max-w-7xl mx-auto">
         <h1 class="text-4xl font-serif font-bold text-[#0f172a] mb-12 text-center">Contacto</h1>
@@ -140,5 +145,24 @@
             <p>Todo el contenido &copy; 2026 Manzano Rodríguez & Asociados. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+    const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+        // Al hacer clic, alternamos entre mostrar y ocultar el menú
+        menu.classList.toggle('hidden');
+        menu.classList.toggle('flex');
+        menu.classList.toggle('flex-col');
+        menu.classList.toggle('absolute');
+        menu.classList.toggle('top-full');
+        menu.classList.toggle('left-0');
+        menu.classList.toggle('w-full');
+        menu.classList.toggle('bg-white');
+        menu.classList.toggle('p-6');
+        menu.classList.toggle('shadow-lg');
+    });
+</script>
 </body>
 </html>
